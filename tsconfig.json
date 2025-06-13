@@ -1,12 +1,16 @@
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
   "compilerOptions": {
-    "composite": true,
-    "types": ["electron-vite/node"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "baseUrl": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": ["./src/renderer/src/*"]
+      "plugins/*": ["../plugins/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "dist"]
 }

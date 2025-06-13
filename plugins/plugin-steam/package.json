@@ -1,0 +1,29 @@
+{
+  "name": "plugin-steam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && cp package.json dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.2",
+    "typescript": "^5.8.3"
+  }
+}
